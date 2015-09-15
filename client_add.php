@@ -1,9 +1,12 @@
 <?php
 require('mysql_connect.php');
-$name = $_POST['name'];
+$name = addslashes($_POST['name']);
 $sql = "INSERT INTO clients (name)
 VALUES ('$name')";
-
+if (empty($name)){
+	echo "input empty";
+	return;
+}
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
 } else {

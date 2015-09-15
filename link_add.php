@@ -1,10 +1,13 @@
 <?php
 require('mysql_connect.php');
-$name = $_POST['name']; 
-$sid = $_POST['section_id'];
+$name = addslashes($_POST['name']); 
+$sid = addslashes($_POST['section_id']);
 $sql = "INSERT INTO links (name, section_id)
 VALUES ('$name', $sid)";
-
+if (empty($sid) OR empty($name)){
+	echo "input empty";
+	return;
+}
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
 } else {
