@@ -204,6 +204,7 @@ $(document).ready(function() {
         add_client();
         $('#c_display > li').remove();
         c_display();
+        $('input').val('')
     });
     $('body').on('click', '#client_remove_btn', function() {
         remove_client()
@@ -220,26 +221,31 @@ $(document).ready(function() {
         add_section()
         $('#s_display > li').remove();
         s_display();
+        $('input').val('')
     });
     $('body').on('click', '#section_remove_btn', function() {
         remove_section()
         $('#s_display > li').remove();
         s_display();
+        $('input').val('')
     });
     $('body').on('click', '#section_edit_btn', function() {
         edit_section()
         $('#s_display > li').remove();
         s_display();
+        $('input').val('')
     });
     $('body').on('click', '#link_add_btn', function() {
         add_link();
         $('#l_display > li').remove();
         l_display();
+        $('input').val('')
     });
     $('body').on('click', '#link_remove_btn', function() {
         remove_link();
         $('#l_display > li').remove();
         l_display();
+        $('input').val('')
     });
     $('body').on('click', '#link_edit_btn', function() {
         edit_link();
