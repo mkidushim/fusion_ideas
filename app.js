@@ -201,53 +201,63 @@ $(document).ready(function() {
     s_display();
     l_display();
     $('body').on('click', '#client_add_btn', function() {
+        $('.response').remove();
         add_client();
         $('#c_display > li').remove();
         c_display();
         $('input').val('')
     });
     $('body').on('click', '#client_remove_btn', function() {
+        $('.response').remove();
         remove_client()
         $('#c_display > li').remove();
         c_display();
         $('input').val('')
     });
     $('body').on('click', '#client_update_btn', function() {
+        $('.response').remove();
         update_client()
         $('#c_display > li').remove();
         c_display();
+        $('input').val('')
     });
     $('body').on('click', '#section_add_btn', function() {
+        $('.response').remove();
         add_section()
         $('#s_display > li').remove();
         s_display();
         $('input').val('')
     });
     $('body').on('click', '#section_remove_btn', function() {
+        $('.response').remove();
         remove_section()
         $('#s_display > li').remove();
         s_display();
         $('input').val('')
     });
     $('body').on('click', '#section_edit_btn', function() {
+        $('.response').remove();
         edit_section()
         $('#s_display > li').remove();
         s_display();
         $('input').val('')
     });
     $('body').on('click', '#link_add_btn', function() {
+        $('.response').remove();
         add_link();
         $('#l_display > li').remove();
         l_display();
         $('input').val('')
     });
     $('body').on('click', '#link_remove_btn', function() {
+        $('.response').remove();
         remove_link();
         $('#l_display > li').remove();
         l_display();
         $('input').val('')
     });
     $('body').on('click', '#link_edit_btn', function() {
+        $('.response').remove();
         edit_link();
         $('#l_display > li').remove();
         l_display();
