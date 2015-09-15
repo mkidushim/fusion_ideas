@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	div{
+		border: 2px solid black;
+		padding: 10px 0px;
+	}
+	.RC {
+		padding-bottom: 35px;
+	}
+	.section {
+		padding-bottom: 11px;
+	}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script type="text/javascript" src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div class="col-md-4">
+	<p>Add Client</p>
+	<input type="number" placeholder="client id">
+	<input type="text" id="client_name" placeholder="client name">
+	<button type="button" id="client_add_btn">Add</button>
+</div>
+<div class="col-md-4 RC">
+	<p>Remove Client</p>
+	<input type="number" id="remove_id" placeholder="client id">
+	<button type="button" id="client_remove_btn">Delete</button>
+</div>
+<div class="col-md-4">
+	<p>Edit Client</p>
+	<input type="number" id="client_edit_id" placeholder="client id to edit">
+	<input type="text" id="client_edit_name" placeholder="new client name">
+	<button type="button" id="client_update_btn">Update</button>
+</div>
+<div class="col-md-4 section">
+	<p>Add section</p>
+	<input type="number" id="client_id" placeholder="client id">
+	<input type="text" id="section_name" placeholder="section name">
+	<button type="button" id="section_add_btn">Add</button>
+</div>
+<div class="col-md-4 section">
+	<p>Remove section</p>
+	<input type="number" id="s_remove_id" placeholder="client id">
+	<input type="number" id="ss_remove_id" placeholder="section id">
+	<button type="button" id="section_remove_btn">Delete</button>
+</div>
+<div class="col-md-4">
+	<p>Edit section</p>
+	<input type="number" id="section_edit_id" placeholder="client id to edit">
+	<input type="number" id="s_edit_id" placeholder="section id to edit">
+	<input type="text" id="s_edit_name" placeholder="new client name">
+	<button type="button" id="section_edit_btn">Update</button>
+</div>
+<div class="col-md-4 section">
+	<p>Add Link</p>
+	<input type="number" id="section_id" placeholder="section id">
+	<input type="text" id="link_name" placeholder="link name">
+	<button type="button" id="link_add_btn">Add</button>
+</div>
+<div class="col-md-4 section">
+	<p>Remove Link</p>
+	<input type="number" id="link_remove_id" placeholder="link id">
+	<input type="number" id="sl_remove_id" placeholder="section id">
+	<button type="button" id="link_remove_btn">Delete</button>
+</div>
+<div class="col-md-4">
+	<p class="success">Edit Link</p>
+	<input type="number" id="l_edit_id" placeholder="link id to edit">
+	<input type="number" id="ls_edit_id" placeholder="section id to edit">
+	<input type="text" id="l_edit_name" placeholder="new link name">
+	<button type="button" id="link_edit_btn">Update</button>
+</div>
+</body>
+</html>
